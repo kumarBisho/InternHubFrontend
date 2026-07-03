@@ -1,0 +1,25 @@
+{
+  "inputSpec": "http://localhost:5248/swagger/v1/swagger.json",
+  "generatorName": "typescript-axios",
+  "output": "./src/types/generated",
+  "apiPackage": "api",
+  "modelPackage": "models",
+  "typescriptThreePlus": true,
+  "usePromises": true,
+  "supportsES6": true,
+  "npmName": "internhub-api-types",
+  "packageVersion": "1.0.0",
+  "packageDescription": "Auto-generated TypeScript types from InternHub API",
+  "enumsAsTypes": true,
+  "useEnumForProps": true,
+  "prefixParameterInterfaces": true,
+  "modelBaseClass": "BaseModel",
+  "additionalProperties": {
+    "npmCompilerOptions": {
+      "strict": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true
+    }
+  }
+}

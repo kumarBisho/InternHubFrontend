@@ -1,0 +1,60 @@
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.development
+
+# Tests & Coverage
+test/
+__tests__/
+coverage/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.circleci/
+
+# Development files
+.eslintrc*
+.prettierrc*
+.editorconfig
+.husky/
+
+# Documentation
+*.md
+docs/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+.cache/
