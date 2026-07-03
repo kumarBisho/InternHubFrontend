@@ -89,6 +89,8 @@ const NotificationBell: React.FC = () => {
       document.addEventListener("mousedown", handleClickOutside);
       return () => document.removeEventListener("mousedown", handleClickOutside);
     }
+
+    return undefined;
   }, [isOpen]);
 
   const handleBellClick = () => {

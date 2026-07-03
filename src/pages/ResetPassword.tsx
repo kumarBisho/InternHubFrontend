@@ -17,7 +17,6 @@ export default function ResetPassword() {
   const [loading, setLoading] = useState(true);
   const [validating, setValidating] = useState(true);
   const [tokenValid, setTokenValid] = useState(false);
-  const [userEmail, setUserEmail] = useState('');
   const [errors, setErrors] = useState<FormErrors>({});
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -36,9 +35,8 @@ export default function ResetPassword() {
       }
 
       try {
-        const result = await authService.validateResetToken(token);
+        await authService.validateResetToken(token);
         setTokenValid(true);
-        setUserEmail(result.email);
       } catch (err: any) {
         setErrors({ general: err || 'Invalid or expired reset token' });
         setTokenValid(false);
