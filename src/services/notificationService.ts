@@ -50,7 +50,7 @@ class NotificationService {
       return;
     }
 
-    const apiUrl = import.meta.env['VITE_API_URL'] || "http://localhost:5248";
+    const apiUrl = import.meta.env['VITE_API_URL'] || "https://internhubbackend-h4qp.onrender.com";
     const hubUrl = `${apiUrl}/hubs/notifications`;
 
     this.hubConnection = new HubConnectionBuilder()

@@ -72,7 +72,7 @@ class CollaborationService {
 
     const signalRUrl = import.meta.env['VITE_SIGNALR_URL'] 
       ? `${import.meta.env['VITE_SIGNALR_URL']}/collaboration`
-      : "http://localhost:5248/hubs/collaboration";
+      : "https://internhubbackend-h4qp.onrender.com/hubs/collaboration";
 
     // Add token as query parameter for better WebSocket support
     const urlWithToken = `${signalRUrl}?access_token=${encodeURIComponent(token)}`;

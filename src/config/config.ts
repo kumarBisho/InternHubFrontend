@@ -8,7 +8,7 @@ const getApiUrl = (): string => {
   if (isDevelopment) {
     return import.meta.env['VITE_API_URL'] || 'http://localhost:5248';
   }
-  return import.meta.env['VITE_API_URL'] || 'https://api.internhub.com';
+  return import.meta.env['VITE_API_URL'] || 'https://internhubbackend-h4qp.onrender.com';
 };
 
 // SignalR Hub URL
