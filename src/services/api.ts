@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { AxiosInstance, AxiosError } from 'axios';
 import { scheduleTokenRefresh } from '../utils/tokenRefresh';
 
-const API_BASE_URL = import.meta.env['VITE_API_URL'] || 'https://internhubbackend-h4qp.onrender.com';
+const API_BASE_URL = import.meta.env['VITE_API_BASE_URL'] || 'https://internhubbackend-h4qp.onrender.com/api';
 const REQUEST_TIMEOUT = 30000; // 30 seconds
 const MAX_RETRIES = 3;
 
