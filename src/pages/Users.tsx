@@ -326,7 +326,7 @@ export default function Users() {
 
         {/* Users Grid */}
         {!loading && filteredUsers.length > 0 && (
-          <div className="max-w-6xl mx-auto space-y-6">
+          <div className="max-w-7xl mx-auto space-y-6">
             {filteredUsers.map((u: User) => {
               const isUserMentor = String(u.role).toLowerCase() === '3' || String(u.role).toLowerCase() === 'mentor';
               
