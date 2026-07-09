@@ -44,7 +44,7 @@ export default function CollaborationCenter() {
     <div className="page-container">
       <Header />
       
-      <main className="collaboration-page-main">
+      <main className="collaboration-page-main max-w-6xl mx-auto space-y-6">
         {/* <div className="collaboration-page-header">
           <div>
             <h1 className="collaboration-page-title">🤝 Real-time Collaboration Center</h1>
